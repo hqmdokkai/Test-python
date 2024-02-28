@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test Python</title>
+    <style>
+      body {
+        background-color: blueviolet;
+        border-top: 20px solid #c51399;
+      }
+      p {
+        color: rgb(255, 0, 242);
+        display: flex;
+        justify-content: space-around;
+      }
+      h1 {
+        color: rgb(255, 0, 242);
+        display: flex;
+        justify-content: space-around;
+      }
+      .video {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    {{ html_content|safe }}
+    <div class="video">
+        <iframe
+            width="1280"
+            height="720"
+            src="https://www.youtube.com/embed/dam0GPOAvVI"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+        ></iframe>
+  </body>
+</html>
